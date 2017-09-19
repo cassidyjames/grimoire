@@ -5,9 +5,10 @@ image: '/images/default.jpg'
 
 
 collections:
-  - grimoire
-  - d1_scannables
-  - d2_scannables
+  grimoire:
+    output: true
+  d1_scannables
+  d2_scannables
 
 
 defaults:
