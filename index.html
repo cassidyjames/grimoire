@@ -25,3 +25,27 @@ title: Grimoire and Lore from Destiny
     </ul>
   {% endif %}
 {% endfor %}
+
+<h1>Destiny 2</h1>
+{% assign items = site.d2 | sort: 'order' %}
+{% for item in items %}
+  <h2>
+    <a href="{{ site.baseurl }}/d2/{{ item.slug }}">{{ item.title }}</a>
+  </h2>
+
+  <!--
+  {% if item.content %}
+    {{ item.content }}
+  {% endif %}
+  -->
+
+  {% if item.tags %}
+    <ul>
+      {% for tag in item.tags %}
+        <li>
+          <a href="#">{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
