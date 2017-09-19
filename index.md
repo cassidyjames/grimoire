@@ -6,7 +6,7 @@ title: Grimoire and Lore from Destiny
 {% for item in grimoire %}
   <h2>{{ item.title }}</h2>
 
-  {% if rental.content %}
-    {{ rental.content }}
+  {% if item.content %}
+    {{ item.content }}
   {% endif %}
 {% endfor %}
