@@ -7,8 +7,10 @@ image: '/images/default.jpg'
 collections:
   grimoire:
     output: true
-  d1_scannables
-  d2_scannables
+  d1_scannables:
+    output: true
+  d2_scannables:
+    output: true
 
 
 defaults:
