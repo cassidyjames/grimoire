@@ -3,33 +3,37 @@ title: Grimoire and Lore from Destiny
 ---
 
 <h1>Destiny</h1>
-{% assign categories = site.d1 | group_by: 'category'| sort: 'name' %}
+{% assign categories = site.d1 | group_by: 'category' | sort: 'name' %}
+{% assign sections = categories | group_by: 'sections' | sort: 'name' %}
 {% for category in categories %}
-  {{ category.name }}
-  {% for item in category.items %}
-    <h2>
-      <a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a>
-    </h2>
+  <h2>{{ category.name }}</h2>
+  {% for section in sections %}
+  <h3>{{ section.name }}</h3>
+    {% for item in section.items %}
+      <h4>
+        <a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a>
+      </h4>
 
-    {% if item.flavor %}
-      <p>| {{ item.flavor}}</p>
-    {% endif %}
+      {% if item.flavor %}
+        <p>| {{ item.flavor}}</p>
+      {% endif %}
 
-    <!--
-    {% if item.content %}
-      {{ item.content }}
-    {% endif %}
-    -->
+      <!--
+      {% if item.content %}
+        {{ item.content }}
+      {% endif %}
+      -->
 
-    {% if item.tags %}
-      <ul>
-        {% for tag in item.tags %}
-          <li>
-            <a href="#">{{ tag }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+      {% if item.tags %}
+        <ul>
+          {% for tag in item.tags %}
+            <li>
+              <a href="#">{{ tag }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 {% endfor %}
 
