@@ -3,31 +3,34 @@ title: Grimoire and Lore from Destiny
 ---
 
 <h1>Destiny</h1>
-{% assign items = site.d1 | sort: 'order' %}
-{% for item in items %}
-  <h2>
-    <a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a>
-  </h2>
+{% assign categories = site.d1 | group_by: 'category'| sort: 'name' %}
+{% for category in categories %}
+  {{ category.name }}
+  {% for item in category.items %}
+    <h2>
+      <a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a>
+    </h2>
 
-  {% if item.flavor %}
-    <p>| {{ item.flavor}}</p>
-  {% endif %}
+    {% if item.flavor %}
+      <p>| {{ item.flavor}}</p>
+    {% endif %}
 
-  <!--
-  {% if item.content %}
-    {{ item.content }}
-  {% endif %}
-  -->
+    <!--
+    {% if item.content %}
+      {{ item.content }}
+    {% endif %}
+    -->
 
-  {% if item.tags %}
-    <ul>
-      {% for tag in item.tags %}
-        <li>
-          <a href="#">{{ tag }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+    {% if item.tags %}
+      <ul>
+        {% for tag in item.tags %}
+          <li>
+            <a href="#">{{ tag }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
 {% endfor %}
 
 <h1>Destiny 2</h1>
