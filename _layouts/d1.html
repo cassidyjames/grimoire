@@ -7,9 +7,21 @@ layout: default
 <h4>{{ page.title }}</h4>
 
 <article class="d1">
-	{% if page.flavor %}
-		<p class="flavor">{{ page.flavor }}</p>
-	{% endif %}
+  {% if page.flavor %}
+    <p class="flavor">{{ page.flavor }}</p>
+  {% endif %}
 
-	{{ content }}
+  {{ content }}
 </article>
+
+  {% if page.tags %}
+  <aside class="tags">
+    <ul>
+      {% for tag in page.tags %}
+        <li>
+          <a href="#">{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+{% endif %}

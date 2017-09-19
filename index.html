@@ -20,49 +20,6 @@ layout: default
         <p>| {{ item.flavor}}</p>
       {% endif %}
 
-      <!--
-      {% if item.content %}
-        {{ item.content }}
-      {% endif %}
-      -->
-
-      <!-- {% if item.tags %}
-        <ul>
-          {% for tag in item.tags %}
-            <li>
-              <a href="#">{{ tag }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %} -->
     {% endfor %}
   {% endfor %}
-{% endfor %}
-
-<h1>Destiny <strong>2</strong></h1>
-{% assign items = site.d2 | sort: 'order' %}
-{% for item in items %}
-  <h2>
-    <a href="{{ site.baseurl }}/d2/{{ item.slug }}">{{ item.title }}</a>
-  </h2>
-
-  {% if item.flavor %}
-    <p>| {{ item.flavor}}</p>
-  {% endif %}
-
-  <!--
-  {% if item.content %}
-    {{ item.content }}
-  {% endif %}
-  -->
-
-  <!-- {% if item.tags %}
-    <ul>
-      {% for tag in item.tags %}
-        <li>
-          <a href="#">{{ tag }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %} -->
 {% endfor %}
