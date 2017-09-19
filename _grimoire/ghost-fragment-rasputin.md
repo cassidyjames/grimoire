@@ -13,7 +13,7 @@ tags:
   - Warmind
   - WarSat
 game: 1
-expansion: Destiny
+expansion:
 ---
 
 \| Cayde-6 Reminisces
