@@ -1,12 +1,17 @@
 ---
 title: 'Ghost Fragment: Rasputin 2'
+category: Allies
+section: The Traveler
+tags:
+  - Rasputin
+  - Vex
 ---
 
-She hunts the Valus named Ta'aurc by the grunting radio traffic of his bodyguards. Cayde sent her to Mars to track and so track she will even if it kills her a hundred times. For him she will hunt forever.
+She hunts the Valus named Ta’aurc by the grunting radio traffic of his bodyguards. Cayde sent her to Mars to track and so track she will even if it kills her a hundred times. For him she will hunt forever.
 
-When Ta'aurc goes down into Meridian Bay she follows him in the night and finds herself caught up in the war. Like this—
+When Ta’aurc goes down into Meridian Bay she follows him in the night and finds herself caught up in the war. Like this—
 
-Something's happening, her Ghost says, something's wrong. She leaps from the Sparrow and gets cover between slabs of ancient stone haunted by quiet firefly light.
+Something’s happening, her Ghost says, something’s wrong. She leaps from the Sparrow and gets cover between slabs of ancient stone haunted by quiet firefly light.
 
 Harvesters sweep overhead, cautious, prowling. On the Cabal command network a low voice mutters in their tongue, saying: Stand by to fire. They are coming. Stand by to fire.
 
@@ -26,10 +31,10 @@ She has the sense of something old lifting a long spear. Testing its heft.
 
 Then dawn light, a terrible dawn—the sky opens up to admit devastation, thrown down from orbit: Minotaurs fall burnt and broken with their fluids boiling out. Cabal guns detonate in thunderous chains as tiny piercing flechettes fall out of the sky and find their ammunition bunkers.
 
-The battle stops. The Vex wink out. On the Cabal network the voice of Valus Ta'aurc roars: Find the source! Rouse the Flayers and find the source!
+The battle stops. The Vex wink out. On the Cabal network the voice of Valus Ta’aurc roars: Find the source! Rouse the Flayers and find the source!
 
 She remembers word from Earth: the Array opened. A ghost of the Cosmodrome set loose. And she wonders who won this battle, who learned the most, the Vex baiting out this new power, or the Cabal hunting it. Or the Warmind itself, testing its reborn strength.
 
-When someone kills Ta'aurc and the Flayers, as they killed Draksis, whose purpose will they serve?
+When someone kills Ta’aurc and the Flayers, as they killed Draksis, whose purpose will they serve?
 
 But this is not for her. Her purpose is the hunt.
