@@ -4,8 +4,8 @@ title: Grimoire and Lore from Destiny
 
 <h1>Destiny</h1>
 {% assign categories = site.d1 | group_by: 'category' | sort: 'name' %}
-{% assign sections = categories | group_by: 'sections' | sort: 'name' %}
 {% for category in categories %}
+  {% assign sections = category | group_by: 'sections' | sort: 'name' %}
   <h2>{{ category.name }}</h2>
   {% for section in sections %}
   <h3>{{ section.name }}</h3>
