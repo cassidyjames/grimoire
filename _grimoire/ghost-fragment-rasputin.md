@@ -2,7 +2,7 @@
 title: 'Ghost Fragment: Rasputin'
 ---
 
-| Cayde-6 Reminisces
+\| Cayde-6 Reminisces
 
 People say I'm a real confident guy. That's true enough. Out in the field I never had a second thought.
 
