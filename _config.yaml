@@ -5,7 +5,9 @@ image: '/images/default.jpg'
 
 
 collections:
-  grimoire:
+  d1:
+    output: true
+  d2:
     output: true
 
 
