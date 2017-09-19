@@ -3,7 +3,7 @@ title: 'Grimoire'
 description: 'Grimoire and lore from the Destiny and Destiny 2 universe created by Bungie'
 image: '/images/default.jpg'
 author: Cassidy James Blaede
-theme-color: "#525"
+theme-color: "#1c222e"
 
 collections:
   d1:
