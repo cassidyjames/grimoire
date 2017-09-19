@@ -3,6 +3,19 @@ title: 'Grimoire'
 description: 'Grimoire and lore from the Destiny and Destiny 2 universe created by Bungie'
 image: '/images/default.jpg'
 
+
+collections:
+  grimoire:
+    output: true
+
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
 # Site Settings, shouldn't have to change (often)
 separator: '&sdot;' # Used in browser/tab titles
 
