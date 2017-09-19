@@ -12,8 +12,6 @@ tags:
   - Vanguard
   - Warmind
   - WarSat
-game: 1
-expansion:
 ---
 
 \| Cayde-6 Reminisces
