@@ -2,8 +2,8 @@
 title: Grimoire and Lore from Destiny
 ---
 
-{% assign grimoire = site.grimoire | sort: 'order' %}
-{% for item in grimoire %}
+{% assign items = site.d1 | sort: 'order' %}
+{% for item in items %}
   <h2>{{ item.title }}</h2>
   {% if item.game %}
     <h3><strong>Destiny {{ item.game }}</strong> {% if item.expansion %}{{ item.expansion }}{% endif %}</h3>
