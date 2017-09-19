@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>Destiny</h1>
+<h2>{{ page.category }}</h2>
+<h3>{{ page.section }}</h3>
+<h4>{{ page.title }}</h4>
+
+<article class="d1">
+	{% if page.flavor %}
+		<p class="flavor">{{ page.flavor }}</p>
+	{% endif %}
+
+	{{ content }}
+</article>

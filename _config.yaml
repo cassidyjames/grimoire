@@ -2,6 +2,8 @@
 title: 'Grimoire'
 description: 'Grimoire and lore from the Destiny and Destiny 2 universe created by Bungie'
 image: '/images/default.jpg'
+author: Cassidy James Blaede
+theme-color: "#525"
 
 collections:
   d1:
@@ -10,13 +12,35 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "d1"
+    values:
+      layout: "d1"
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: "d2"
+    values:
+      layout: "d2"
 
-# Site Settings, shouldn't have to change (often)
+# Site-wide social info
+email: c@ssidyjam.es
+twitter: "@CassidyJames"
+github:
+  user: cassidyjames
+  repo: grimoire
+square: "$cassidyjames"
+google-plus: "+CassidyJames"
+medium: "@cassidyjames"
+instagram: cassidy.james.blaede
+gravatar: 41275ecc8271aca852ce2c0ff72d2610 # Gravatar md5 hash
+
+# Settings
+permalink: pretty
 separator: '&sdot;' # Used in browser/tab titles
 
 # Set automatically by GitHub Pages
