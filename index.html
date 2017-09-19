@@ -11,8 +11,12 @@ title: Grimoire and Lore from Destiny
   {% endif %}
 
   {% if item.tags %}
-    {% for tag in item.tags %}
-      <a href="#">{{ tag }}</a>
-    {% endfor %}
+    <ul>
+      {% for tag in item.tags %}
+        <li>
+          <a href="#">{{ tag }}</a>
+        </li>
+      {% endfor %}
+    </ul>
   {% endif %}
 {% endfor %}
