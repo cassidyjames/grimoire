@@ -4,7 +4,7 @@ title: 'Ghost Fragment: Rasputin'
 
 | Cayde-6 Reminisces
 
-People say I'm a real confident guy That's true enough. Out in the field I never had a second thought.
+People say I'm a real confident guy. That's true enough. Out in the field I never had a second thought.
 
 My old friend Andal—he used to stand here, right in this spot—he'd come up with these wild stories. He'd say, you know Cayde, I've been examining the evidence, and personally I've come to think it's you. You're Rasputin, legendary Warmind, defender of Earth. And I wish you'd remember that, so you could reclaim your full power and save us all.
 
