@@ -1,7 +1,6 @@
 ---
-# front-matter
+title: 'Ghost Fragment: Rasputin'
 ---
-# Ghost Fragment: Rasputin
 
 | Cayde-6 Reminisces
 
