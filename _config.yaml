@@ -3,13 +3,11 @@ title: 'Grimoire'
 description: 'Grimoire and lore from the Destiny and Destiny 2 universe created by Bungie'
 image: '/images/default.jpg'
 
-
 collections:
   d1:
     output: true
   d2:
     output: true
-
 
 defaults:
   -
