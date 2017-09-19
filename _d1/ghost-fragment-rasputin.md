@@ -1,6 +1,8 @@
 ---
 title: 'Ghost Fragment: Rasputin'
 flavor: Cayde-6 Reminisces
+category: Allies
+section: The Traveler
 tags: 
   - Brask, Andal
   - Cayde-6
