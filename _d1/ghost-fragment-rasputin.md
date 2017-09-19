@@ -1,5 +1,6 @@
 ---
 title: 'Ghost Fragment: Rasputin'
+flavor: Cayde-6 Reminisces
 tags: 
   - Brask, Andal
   - Cayde-6
@@ -13,8 +14,6 @@ tags:
   - Warmind
   - WarSat
 ---
-
-\| Cayde-6 Reminisces
 
 People say I’m a real confident guy. That’s true enough. Out in the field I never had a second thought.
 
