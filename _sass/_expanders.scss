@@ -1,0 +1,36 @@
+.expander {
+  position: relative;
+
+  input {
+    display: none;
+
+    + label {
+      *:first-child::before {
+        content: "+";
+
+        display: inline-block;
+        // width: 1em;
+
+        font-family: monospace;
+        text-align: center;
+      }
+
+      + * {
+        display: none;
+      }
+    }
+
+    &:checked {
+      + label {
+        *:first-child::before {
+          content: "-";
+        }
+
+        + * {
+          display: block;
+          animation: slideIn 250ms ease;
+        }
+      }
+    }
+  }
+}

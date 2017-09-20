@@ -10,11 +10,22 @@ layout: default
 
   {% assign sections = category.items | group_by: 'section' | sort: 'name' %}
   {% for section in sections %}
-  <h3>{{ section.name }}</h3>
-    <ul>
-      {% for item in section.items %}
-        <li><a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
+
+    {% assign section_slug = "d1-" | append: category.name | append: "-" | append: section.name | slugify %}
+
+    <section class="expander">
+      <input type="checkbox" id="{{ section_slug }}-expander" />
+      <label for="{{ section_slug }}-expander">
+        <h3 id="{{ section_slug }}">{{ section.name }}</h3>
+      </label>
+
+      <ul>
+        {% for item in section.items %}
+          <li><a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+
   {% endfor %}
+
 {% endfor %}

@@ -42,9 +42,9 @@ h3 {
   text-transform: uppercase;
   opacity: 0.75;
 
-  h2 + & {
+  // h2 + & {
     margin-top: 0;
-  }
+  // }
 }
 
 h4 {
@@ -67,6 +67,8 @@ a {
 
 ul {
   padding-left: 1em;
+  margin-bottom: 3em;
+  margin-left: 1.25em;
 }
 
 .flavor {
