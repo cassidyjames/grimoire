@@ -32,12 +32,13 @@ a {
 }
 
 article {
-  background-color: rgba(255, 255, 255, 0.125);
+  margin: 1em auto 1em;
   padding: 0.25em 1em;
+
+  background-color: rgba(255, 255, 255, 0.125);
 }
 
 aside.tags {
-  font-weight: 900;
   text-align: justify;
 
   ul {
@@ -46,7 +47,10 @@ aside.tags {
 
     li {
       display: inline-block;
-      padding: 0.5em;
+
+      &:not(:last-child)::after {
+        content: ","
+      }
     }
   }
 }
