@@ -11,11 +11,10 @@ layout: default
   {% assign sections = category.items | group_by: 'section' | sort: 'name' %}
   {% for section in sections %}
   <h3>{{ section.name }}</h3>
-    {% for item in section.items %}
-      <h4>
-        <a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a>
-      </h4>
-
-    {% endfor %}
+    <ul>
+      {% for item in section.items %}
+        <li><a href="{{ site.baseurl }}/d1/{{ item.slug }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
   {% endfor %}
 {% endfor %}
