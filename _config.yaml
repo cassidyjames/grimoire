@@ -41,7 +41,7 @@ gravatar: 41275ecc8271aca852ce2c0ff72d2610 # Gravatar md5 hash
 
 # Settings
 permalink: pretty
-separator: '&sdot;' # Used in browser/tab titles
+separator: '|' # Used in browser/tab titles
 
 # Set automatically by GitHub Pages
 # baseurl: "grimoire" # Path of Jekyll instance; empty string if site root
