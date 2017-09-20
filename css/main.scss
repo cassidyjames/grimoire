@@ -13,13 +13,37 @@ html {
 body {
   height: 100%;
   background-attachment: fixed;
-  background-color: #1c222e;
-  background-image: url("../images/bg.jpg");
+  background-color: $bg-d1;
+  background-image: url("../images/bg-d1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  color: white;
+  color: $white;
+
+  &.d1,
+  &.dark {
+    background-color: $bg-d1;
+    background-image: url("../images/bg-d1.jpg");
+
+    color: $white;
+
+    article {
+      background-color: rgba($white, 0.125);
+    }
+  }
+
+  &.d2,
+  &.light {
+    background-color: $bg-d2;
+    background-image: url("../images/bg-d2.jpg");
+
+    color: $black;
+
+    article {
+      background-color: rgba($black, 0.125);
+    }
+  }
 }
 
 section.main {
@@ -35,7 +59,7 @@ article {
   margin: 1em auto 1em;
   padding: 0.25em 1em;
 
-  background-color: rgba(255, 255, 255, 0.125);
+  background-color: rgba($black, 0.125);
 }
 
 aside.tags {
