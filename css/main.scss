@@ -49,6 +49,8 @@ body {
 section.main {
   max-width: 800px;
   margin: 0 auto;
+
+  position: relative;
 }
 
 a {
@@ -75,4 +77,16 @@ aside.tags {
       }
     }
   }
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 1em;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
 }

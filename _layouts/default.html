@@ -4,6 +4,32 @@
   <body class="{{ page.layout }}">
     <section class="main">
       {{ content }}
+      <button id="theme-toggle" onclick="theme('toggle')">Toggle theme</button>
     </section>
+
+
+    <script>
+      var body = document.getElementsByTagName('body')[0];
+
+      if ( !sessionStorage.getItem('theme') ) {
+        sessionStorage.setItem('theme', 'dark');
+      }
+
+      theme();
+
+      function theme(action) {
+        switch (action) {
+          case "toggle":
+            if (sessionStorage.getItem('theme') == 'light') {
+              sessionStorage.setItem('theme', 'dark');
+            } else {
+              sessionStorage.setItem('theme', 'light');
+            }
+          default:
+            body.classList.remove('light', 'dark');
+            body.classList.add(sessionStorage.getItem('theme'));
+        }
+      }
+    </script>
   </body>
 </html>
